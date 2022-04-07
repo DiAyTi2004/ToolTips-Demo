@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo ToolTips</title>
+</head>
+<link rel="stylesheet" href="./style.css">
+<link rel="stylesheet" href="./tooltips.css">
+<body>
+    <div id="root">
+        <div class="btn btn--showTop">
+            <h3 class="btn__message">Show top tooltip.</h3>
+        </div>
+        <div class="btn btn--showRight">
+            <h3 class="btn__message">Show right tooltip.</h3>
+        </div>
+        <div class="btn btn--showLeft">
+            <h3 class="btn__message">Show left tooltip.</h3>
+        </div>
+        <div class="btn btn--showBottom">
+            <h3 class="btn__message">Show bottom tooltip.</h3>
+        </div>
+    </div>
+    <script src="./app.js"></script>
+    <script>
+        //Truyền vào hàm 1 object có các thuộc tính selector, vị trí, nội dung tool.
+        CreateToolTips( {
+            selector: '.btn--showTop',
+            position: 'top',
+            message: 'This is a top tooltip!'
+        });
+        CreateToolTips( {
+            selector: '.btn--showRight',
+            position: 'right',
+            message: 'This is a right tooltip!'
+        });
+        CreateToolTips( {
+            selector: '.btn--showLeft',
+            position: 'left',
+            message: 'This is a left tooltip!'
+        });
+        CreateToolTips( {
+            selector: '.btn--showBottom',
+            position: 'bottom',
+            message: 'This is a bottom tooltip!'
+        });
+    </script>
+</body>
+</html>
